@@ -7,7 +7,7 @@
   <meta name="description" content="RNV-TECH LLC builds executive-grade software and AI productivity apps. MySecretary is the flagship voice-first AI app for founders, executives, and operators." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -1045,6 +1045,7 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#mysecretary">MySecretary</a></li>
+        <li><a href="#audience">Built For</a></li>
         <li><a href="#whats-next">What's Next</a></li>
         <li><a href="#founder">Founder</a></li>
         <li><a href="#kickstarter">Kickstarter</a></li>
@@ -1052,19 +1053,20 @@
         <li><a href="#launch" class="btn btn-gold nav-cta">Join Launch List</a></li>
       </ul>
 
-      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <div class="hamburger" id="hamburger">
         <span></span><span></span><span></span>
       </div>
     </div>
 
     <div class="mobile-menu" id="mobile-menu">
-      <a href="#home" onclick="toggleMenu()">Home</a>
-      <a href="#mysecretary" onclick="toggleMenu()">MySecretary</a>
-      <a href="#whats-next" onclick="toggleMenu()">What's Next</a>
-      <a href="#founder" onclick="toggleMenu()">Founder</a>
-      <a href="#kickstarter" onclick="toggleMenu()">Kickstarter</a>
-      <a href="#contact" onclick="toggleMenu()">Contact</a>
-      <a href="#launch" class="btn btn-gold" onclick="toggleMenu()">Join the Launch List</a>
+      <a href="#home">Home</a>
+      <a href="#mysecretary">MySecretary</a>
+      <a href="#audience">Built For</a>
+      <a href="#whats-next">What's Next</a>
+      <a href="#founder">Founder</a>
+      <a href="#kickstarter">Kickstarter</a>
+      <a href="#contact">Contact</a>
+      <a href="#launch" class="btn btn-gold">Join the Launch List</a>
     </div>
   </div>
 </nav>
@@ -1548,6 +1550,7 @@
       <div class="footer-links">
         <a href="#home">Home</a>
         <a href="#mysecretary">MySecretary</a>
+        <a href="#audience">Built For</a>
         <a href="#whats-next">What's Next</a>
         <a href="#founder">Founder</a>
         <a href="https://www.kickstarter.com/projects/rnv-tech/help-launch-my-secretary-an-ai-productivity-app" target="_blank" rel="noopener">Kickstarter</a>
@@ -1581,6 +1584,12 @@
     menu.style.display = isOpen ? '' : 'flex';
   }
 
+  // Wire hamburger and mobile menu links via addEventListener (no inline onclick)
+  document.getElementById('hamburger').addEventListener('click', toggleMenu);
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', toggleMenu);
+  });
+
   // Reset mobile menu when resizing to desktop so inline style doesn't linger
   window.addEventListener('resize', () => {
     if (window.innerWidth > 768) {
@@ -1597,7 +1606,7 @@
     entries.forEach(entry => {
       if (entry.isIntersecting) entry.target.classList.add('visible');
     });
-  }, { threshold: 0.05 });
+  }, { threshold: 0.1 });
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
