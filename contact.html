@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Launch List | RNV-TECH LLC</title>
+  <meta name="description" content="Join the RNV-TECH launch list for early access to MySecretary. Or reach out to the team directly." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="RNV-TECH LLC" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mysecretary.html">MySecretary</a></li>
+        <li><a href="whats-next.html">What's Next</a></li>
+        <li><a href="founder.html">Founder</a></li>
+        <li><a href="kickstarter.html">Kickstarter</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#launch" class="btn btn-gold nav-cta">Join Launch List</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="mysecretary.html">MySecretary</a>
+      <a href="whats-next.html">What's Next</a>
+      <a href="founder.html">Founder</a>
+      <a href="kickstarter.html">Kickstarter</a>
+      <a href="contact.html">Contact</a>
+      <a href="#launch" class="btn btn-gold">Join the Launch List</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── PAGE HERO ── -->
+<div class="page-hero">
+  <div class="container">
+    <div class="section-label">Connect</div>
+    <h1>Let's <span class="gold-text">Connect</span></h1>
+    <p>Join the launch list for early access or send us a message directly.</p>
+  </div>
+</div>
+
+<!-- ── LAUNCH LIST ── -->
+<section id="launch">
+  <div class="container">
+    <div class="launch-card fade-in">
+      <div class="section-label">Early Access</div>
+      <h2>Join the <span class="gold-text">Launch List</span></h2>
+      <div class="gold-line"></div>
+      <p>Get first access to MySecretary before it goes public. Launch List members receive exclusive early access, founder pricing, and priority onboarding when we ship.</p>
+      <form class="signup-form" onsubmit="handleSignup(event)">
+        <input type="hidden" name="_subject" value="New Launch List Signup — RNV-TECH" />
+        <input type="email" id="email-input" name="email" placeholder="Enter your executive email..." required />
+        <button type="submit" class="btn btn-gold">Join Now</button>
+      </form>
+      <div class="launch-perks">
+        <div class="perk">Early Access</div>
+        <div class="perk">Founder Pricing</div>
+        <div class="perk">Priority Onboarding</div>
+        <div class="perk">No spam. Ever.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact" style="background:var(--black);">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <div class="section-label">Get in Touch</div>
+        <h2>Send Us a <span class="gold-text">Message</span></h2>
+        <div class="gold-line left"></div>
+        <p>Whether you want to back MySecretary on Kickstarter, join our launch list, or simply learn more about what we're building — we'd love to hear from you.</p>
+        <div class="contact-links">
+          <a href="mailto:Support@rnv-tech.com" class="contact-link">
+            <div class="contact-link-icon">📧</div>
+            <div>
+              <div style="font-weight:600;">Email Us</div>
+              <div style="font-size:0.8rem;color:var(--gray-4);">Support@rnv-tech.com</div>
+            </div>
+          </a>
+          <a href="https://www.kickstarter.com/projects/rnv-tech/help-launch-my-secretary-an-ai-productivity-app" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">🚀</div>
+            <div>
+              <div style="font-weight:600;">Back on Kickstarter</div>
+              <div style="font-size:0.8rem;color:var(--gray-4);">Support the MySecretary launch</div>
+            </div>
+          </a>
+          <a href="#launch" class="contact-link">
+            <div class="contact-link-icon">✉️</div>
+            <div>
+              <div style="font-weight:600;">Join the Launch List</div>
+              <div style="font-size:0.8rem;color:var(--gray-4);">Get early access and founder pricing</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-wrap fade-in">
+        <form onsubmit="handleContact(event)">
+          <input type="hidden" name="_subject" value="New Contact Message — RNV-TECH Website" />
+          <div class="form-group">
+            <label class="form-label" for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" name="name" class="form-input" placeholder="First & Last Name" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" name="email" class="form-input" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" class="form-input" placeholder="Tell us what's on your mind..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold" style="width:100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="RNV-TECH LLC" class="footer-logo-img" />
+        <div class="footer-tagline">Executive software for faster execution.</div>
+        <div class="footer-email"><a href="mailto:Support@rnv-tech.com">Support@rnv-tech.com</a></div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="mysecretary.html">MySecretary</a>
+        <a href="whats-next.html">What's Next</a>
+        <a href="founder.html">Founder</a>
+        <a href="https://www.kickstarter.com/projects/rnv-tech/help-launch-my-secretary-an-ai-productivity-app" target="_blank" rel="noopener">Kickstarter</a>
+        <a href="#launch">Launch List</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-copy">© 2026 RNV-TECH LLC. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
