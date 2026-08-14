@@ -1,4 +1,7 @@
-Place the following image files in this directory:
-- founder.jpg  (Michael Bettis headshot)
-- logo.png     (RNV-TECH square logo)
-- banner.png   (RNV-TECH horizontal banner)
+Site images (all pre-compressed for web — resize before replacing any of these):
+
+- logo.png                    RNV-TECH horizontal logo — nav + footer, also the hero watermark
+- founder.jpg                 Michael Bettis headshot — home page founder section
+- favicon.png                 Browser tab icon
+- mysecretary-icon.png        MySecretary app icon — social share image
+- mysecretary-screenshot.png  App screenshot (not currently placed on any page)
