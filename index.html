@@ -1,10 +1,247 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First GitHub Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RNV-TECH LLC — Executive Software for Faster Execution</title>
+  <meta name="description" content="RNV-TECH LLC builds executive-grade software and AI productivity apps. MySecretary™ is the flagship voice-first AI app for founders, executives, and operators." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; frame-src 'none'" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <link rel="canonical" href="https://rnv-tech.com/" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RNV-TECH LLC" />
+  <meta property="og:url" content="https://rnv-tech.com/" />
+  <meta property="og:title" content="RNV-TECH LLC — Executive Software for Faster Execution" />
+  <meta property="og:description" content="RNV-TECH LLC builds executive-grade software and AI productivity apps. MySecretary™ is the flagship voice-first AI app for founders, executives, and operators." />
+  <meta property="og:image" content="https://rnv-tech.com/images/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RNV-TECH LLC — Executive Software for Faster Execution" />
+  <meta name="twitter:description" content="RNV-TECH LLC builds executive-grade software and AI productivity apps. MySecretary™ is the flagship voice-first AI app for founders, executives, and operators." />
+  <meta name="twitter:image" content="https://rnv-tech.com/images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1>Hello, I am learning GitHub</h1>
-  <p>This is my first app-building practice page.</p>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="RNV-TECH LLC" class="nav-logo-img" width="1200" height="400" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mysecretary.html">MySecretary™</a></li>
+        <li><a href="#founder">Founder</a></li>
+        <li><a href="https://www.kickstarter.com/projects/rnv-tech/help-launch-my-secretary-an-ai-productivity-app" target="_blank" rel="noopener">Kickstarter</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html#launch" class="btn btn-gold nav-cta">Join Launch List</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="mysecretary.html">MySecretary™</a>
+      <a href="#founder">Founder</a>
+      <a href="https://www.kickstarter.com/projects/rnv-tech/help-launch-my-secretary-an-ai-productivity-app" target="_blank" rel="noopener">Kickstarter</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html#launch" class="btn btn-gold">Join the Launch List</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-banner-bg"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-label">RNV-TECH LLC — Flagship Launch</div>
+        <h1>Executive Software for<br /><span class="gold-text">Faster Execution.</span></h1>
+        <p class="hero-sub">RNV-TECH LLC builds AI-powered productivity software for founders, executives, and operators who don't have time to slow down. Our flagship app, MySecretary™, turns your voice into action.</p>
+        <div class="hero-actions">
+          <a href="https://www.kickstarter.com/projects/rnv-tech/help-launch-my-secretary-an-ai-productivity-app" target="_blank" rel="noopener" class="btn btn-gold">Back MySecretary™</a>
+          <a href="contact.html#launch" class="btn btn-outline">Join the Launch List</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="app-mockup">
+          <div class="mockup-header">
+            <div class="mockup-icon">🎙️</div>
+            <div>
+              <div class="mockup-title">MySecretary™</div>
+              <div class="mockup-sub">Voice-First AI Assistant</div>
+            </div>
+          </div>
+          <div class="voice-wave">
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+          </div>
+          <div class="mockup-output">
+            <div class="mockup-output-label">Generating from voice note...</div>
+            <span class="mockup-pill">📧 Email Draft</span>
+            <span class="mockup-pill">✅ Action Items</span>
+            <span class="mockup-pill">📋 Summary</span>
+            <span class="mockup-pill">📅 Meeting Notes</span>
+            <span class="mockup-pill">📌 Task List</span>
+            <span class="mockup-pill">📊 Briefing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <div class="section-label">About the Company</div>
+        <h2>The Company Behind the <span class="gold-text">Software</span></h2>
+        <div class="gold-line left"></div>
+        <p>RNV-TECH LLC is a software and digital application company on a mission to build executive-grade tools that eliminate friction and amplify output. We believe the best leaders shouldn't waste time on administrative drag.</p>
+        <p>We build software that thinks like an operator, moves like a founder, and executes like a machine. Every product we release is designed to give time back to the people who create, decide, and lead.</p>
+        <a href="mysecretary.html" class="btn btn-outline mt-2">See Our Flagship App</a>
+      </div>
+      <div class="about-stats fade-in">
+        <div class="stat-card"><div class="stat-num">AI-First</div><div class="stat-label">Design philosophy</div></div>
+        <div class="stat-card"><div class="stat-num">Voice</div><div class="stat-label">Primary input model</div></div>
+        <div class="stat-card"><div class="stat-num">1 Note</div><div class="stat-label">Becomes 6+ outputs</div></div>
+        <div class="stat-card"><div class="stat-num">Exec</div><div class="stat-label">Grade software</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MYSECRETARY TEASER ── -->
+<section id="mysecretary" style="background: var(--black);">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Flagship Product</div>
+      <h2>Meet <span class="gold-text">MySecretary™</span></h2>
+      <div class="gold-line"></div>
+      <p>One voice note becomes emails, tasks, meeting notes, summaries, action items, and daily briefings — in seconds.</p>
+    </div>
+    <div class="app-hero-card fade-in">
+      <div class="app-hero-inner">
+        <div>
+          <div class="app-badge">🎙️ Flagship App</div>
+          <h2>One Voice Note.<br /><span class="gold-text">Infinite Output.</span></h2>
+          <p>MySecretary™ captures your voice and transforms it into everything you need — all in seconds. Built for the people who think faster than they type.</p>
+          <div class="feature-tags">
+            <span class="feature-tag">Email Drafts</span>
+            <span class="feature-tag">Task Lists</span>
+            <span class="feature-tag">Meeting Notes</span>
+            <span class="feature-tag">Summaries</span>
+            <span class="feature-tag">Action Items</span>
+            <span class="feature-tag">Daily Briefings</span>
+          </div>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="mysecretary.html" class="btn btn-gold">Explore MySecretary™</a>
+            <a href="https://www.kickstarter.com/projects/rnv-tech/help-launch-my-secretary-an-ai-productivity-app" target="_blank" rel="noopener" class="btn btn-outline">Back on Kickstarter</a>
+          </div>
+        </div>
+        <div class="app-mockup">
+          <div class="mockup-header">
+            <div class="mockup-icon">🎙️</div>
+            <div><div class="mockup-title">MySecretary™</div><div class="mockup-sub">Recording voice note...</div></div>
+          </div>
+          <div class="voice-wave">
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+          </div>
+          <div class="mockup-output">
+            <div class="mockup-output-label">AI Processing Complete</div>
+            <span class="mockup-pill">✅ 3 Action Items</span>
+            <span class="mockup-pill">📧 Email Ready</span>
+            <span class="mockup-pill">📋 Summary</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOUNDER STORY ── -->
+<section id="founder" style="background: var(--gray-1); border-top: 1px solid rgba(212,175,55,0.08);">
+  <div class="container">
+    <div class="founder-grid">
+      <div class="founder-portrait fade-in">
+        <div class="portrait-wrapper">
+          <div class="portrait-ring">
+            <div class="portrait-inner">
+              <img src="images/founder.jpg" alt="Michael Bettis — Founder &amp; CEO, RNV-TECH LLC" width="700" height="875" loading="lazy" />
+            </div>
+          </div>
+          <div class="portrait-badge">
+            <div class="portrait-badge-name">Michael Bettis</div>
+            <div class="portrait-badge-role">Founder & CEO</div>
+          </div>
+        </div>
+      </div>
+      <div class="founder-text fade-in">
+        <div class="section-label">The Founder's Story</div>
+        <h2>Built by Someone Who <span class="gold-text">Runs the Race</span></h2>
+        <div class="gold-line left"></div>
+        <div class="founder-quote">"I built MySecretary™ because I was tired of losing great ideas to the friction between thinking and executing. Executives shouldn't have to slow down to write emails — they should just talk."</div>
+        <p>Michael Bettis is the founder and CEO of RNV-TECH LLC. He started the company with a single belief: the best software is invisible — it just gets out of your way and lets you execute.</p>
+        <p>With a background in operations and digital product development, Michael built MySecretary™ for the version of himself that had too many ideas and not enough time to act on them all. The result is a product that thinks like an executive and moves like a machine.</p>
+        <a href="mailto:Support@rnv-tech.com" class="btn btn-outline mt-2">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── KICKSTARTER CTA ── -->
+<section id="kickstarter">
+  <div class="container">
+    <div class="kickstarter-card fade-in">
+      <div class="ks-badge">🚀 Live Campaign</div>
+      <h2>Back <span class="gold-text">MySecretary™</span><br />on Kickstarter</h2>
+      <div class="gold-line"></div>
+      <p>Your support helps us ship faster and put executive-grade AI tools in the hands of the people who need them. Every backer gets early access and exclusive perks.</p>
+      <div class="ks-actions">
+        <a href="https://www.kickstarter.com/projects/rnv-tech/help-launch-my-secretary-an-ai-productivity-app" target="_blank" rel="noopener" class="btn btn-gold">Back MySecretary™ Now</a>
+        <a href="contact.html#launch" class="btn btn-outline">Join the Launch List</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="RNV-TECH LLC" class="footer-logo-img" width="1200" height="400" loading="lazy" />
+        <div class="footer-tagline">Executive software for faster execution.</div>
+        <div class="footer-email"><a href="mailto:Support@rnv-tech.com">Support@rnv-tech.com</a></div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="mysecretary.html">MySecretary™</a>
+        <a href="https://www.kickstarter.com/projects/rnv-tech/help-launch-my-secretary-an-ai-productivity-app" target="_blank" rel="noopener">Kickstarter</a>
+        <a href="contact.html#launch">Launch List</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-terms.html">Privacy & Terms</a>
+      </div>
+      <div class="footer-copy">© 2026 RNV-TECH LLC. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
